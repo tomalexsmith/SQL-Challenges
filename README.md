@@ -1,3 +1,3 @@
 # SQL-Challenges
 
-This repo contains a library of SQL challenges which I have completed for fun 😊
+This repo contains a library of SQL Practice which I have completed to improve and showcase my SQL skills
