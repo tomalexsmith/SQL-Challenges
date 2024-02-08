@@ -1,1 +1,1 @@
-![image](https://github.com/tomalexsmith/SQL-Challenges/assets/95169394/22eea262-bac9-4108-a564-e9e707fa297b)
+![image](https://github.com/tomalexsmith/SQL-Challenges/assets/95169394/a142c158-95b7-4208-b0cf-fdb64ed03360)
