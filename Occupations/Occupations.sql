@@ -1,3 +1,30 @@
+/*
+First solution to problem
+*/
+
+select min(case col when 1 then name end),
+    min(case col when 2 then name end),
+    min(case col when 3 then name end),
+    min(case col when 4 then name end)
+from (
+    select *,
+        row_number() over(partition by col order by Name asc) as row
+    from (
+        select name,
+            case occupation
+                when 'Doctor' then 1
+                when 'Professor' then 2
+                when 'Singer' then 3
+                else 4
+            end as col
+        from occupations
+    ) occupation_x
+) occupation_xy
+group by row
+   
+/*
+Alternate solution
+*/
 with main as (
     select name, occupation,
         row_number() over(partition by occupation order by occupation asc, name asc) as col
